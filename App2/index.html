@@ -1,4 +1,8 @@
 ﻿<!DOCTYPE html>
+<!--
+Sukhpreet singh sidhu
+    735952
+-->
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,24 +10,26 @@
     <link href="css/default.css" rel="stylesheet" />
 </head>
 <body>
+
+    <label>Start number: <input type="text" id="start" name="start"><br></label>
+    <label>Stop number: <input type="text" id="stop" name="stop"><br></label>
+    <label>Step Down number: <input type="text" id="step" name="stepdown"><br></label>
+    <button id="button" onclick="loop()"> Submit</button>
+
     <script>
-        /*
-         * Sukhpreet Singh Sidhu
-         * 735952
-         */ 
+        start = document.getElementById(start);
+        stop = document.getElementById(stop);
+        step = document.getElementById(step);
         function loop(start, stop) {
-            var sum = 0; 
-            for (var i = start; i >= stop; i = i - 11) {
-                sum = sum + i; 
+            var sum ;
+            for (var i = start; i >= stop; i = i - step) {
+                sum = sum + i;
             }
             //return sum;
             console.log(sum);
-            document.write("This is the sum - "+sum);
+            document.write("This is the sum - " + sum);
         }
-        loop(1109,119);
-        
-        
+        //loop(start,stop);
     </script>
-    
 </body>
 </html>
