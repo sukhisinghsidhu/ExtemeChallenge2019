@@ -6,7 +6,24 @@
     <link href="css/default.css" rel="stylesheet" />
 </head>
 <body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+    <script>
+        /*
+         * Sukhpreet Singh Sidhu
+         * 735952
+         */ 
+        function loop(start, stop) {
+            var sum = 0; 
+            for (var i = start; i >= stop; i = i - 11) {
+                sum = sum + i; 
+            }
+            //return sum;
+            console.log(sum);
+            document.write("This is the sum - "+sum);
+        }
+        loop(1109,119);
+        
+        
+    </script>
+    
 </body>
 </html>
